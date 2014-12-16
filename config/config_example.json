@@ -1,0 +1,5 @@
+{
+  "feeds": [
+    "http://localhost:3000/assets/example.xml"
+  ]
+}
