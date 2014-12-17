@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html ng-app="phpucMonitor">
-  <head>
+<head>
     <meta charset="utf-8"/>
-    <title>phpucMonitor</title>
+    <title>phpUC Monitor</title>
+
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
     <!-- inject:vendor:css -->
-    <link rel="stylesheet" href="/angular-loading-bar/build/loading-bar.css">
-    <link rel="stylesheet" href="/angular-toastr/dist/angular-toastr.css">
-    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
     <!-- endinject -->
+
     <!-- inject:css -->
-    <link rel="stylesheet" href="/css/app.css">
     <!-- endinject -->
-  </head>
-  <body>
-    <h1>phpucMonitor d </h1>
-    <h2>Your new AngularJS app is now ready...</h2>
-    <ng-view></ng-view>
-    <!-- inject:vendor:js -->
-    <script src="/lodash/dist/lodash.compat.js"></script>
-    <script src="/jquery/dist/jquery.js"></script>
-    <script src="/angular/angular.js"></script>
-    <script src="/angular-loading-bar/build/loading-bar.js"></script>
-    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="/angular-toastr/dist/angular-toastr.js"></script>
-    <script src="/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
-    <script src="/ngstorage/ngStorage.js"></script>
-    <script src="/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- endinject -->
-    <!-- inject:js -->
-    <script src="/app.js"></script>
-    <!-- endinject -->
-  </body>
+</head>
+<body>
+
+<div data-ui-view="header"></div>
+
+<div id="container" class="container-fluid">
+    <div data-ui-view="content"></div>
+</div>
+
+<div data-ui-view="footer"></div>
+
+<script type="application/javascript">
+    var feeds = @@feeds;
+</script>
+
+<!-- inject:vendor:js -->
+<!-- endinject -->
+
+<!-- inject:js -->
+<!-- endinject -->
+</body>
 </html>
