@@ -11,7 +11,7 @@
             function($scope) {
                 $scope.openSettings = function openSettings() {
                     console.log('open settings model');
-                }
+                };
             }
         );
 
